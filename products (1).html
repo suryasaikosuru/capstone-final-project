@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+  box-sizing: border-box;
+  font-size: 70%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+}
+
+.box {
+  max-width: 1824px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .box {
+    padding: 0 48px;
+  }
+}
+
+
+
+/* HEADER */
+ .logob{
+ width: 100px;
+ height: 80px;
+ cursor: pointer;
+ }
+ 
+ nav{
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+ }
+ 
+ nav ul li a{
+     text-decoration: none;
+     color: #606163;
+ }
+ 
+ nav ul li a:hover{
+     color: #ff4321;
+ } 
+
+ .d {
+  display: flex;
+  align-items: center;
+}
+
+
+ .align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ @media only screen and (max-width: 768px) {
+  nav {
+    padding: 16px 0;
+  }
+
+
+  .icons{
+    display: none;
+  }
+
+ 
+  .logob{
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    } 
+  }
+  
+  
+  
+
+/* Intro */
+.intro {
+  height: calc(100vh - 112px);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: lightgray;
+  background-image: url('wallet1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+  background-size: 100% 100%;
+/*background-blend-mode: overlay;*/
+}
+
+.intro-content {
+  height: 100%;
+}
+
+
+
+.dis {
+  display: inline-block;
+  font-size: 40px;
+  color: #ff4321;
+}
+
+.intro h1 {
+  margin-top: 50px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+}
+
+.intro h2 {
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+}
+
+
+.intro  h3 {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 80px;
+  background-color: #ff4321;
+  padding: 20px 80px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+  margin-top: 75px;
+  margin-left: 600px;
+}
+
+
+
+
+/* Section */
+.section {
+  padding: 160px 0 0 0;
+}
+
+/* Benefits */
+.benefit-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 80px;
+}
+
+.benefit {
+  border: 1px solid #ccc;
+  padding: 16px 16px 32px 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefit .icon {
+  color:  #ff4321;
+  font-size: 64px;
+}
+
+.benefit h4 {
+  margin-bottom: 5px;
+}
+
+.benefit .text {
+  font-size: 24px;
+  color: #777;
+}
+
+/* New Arrivals */
+.h {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 600;
+}
+
+.h h1 {
+  font-weight: 400;
+}
+
+.h span {
+  color:  #ff4321;
+}
+
+.ac-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.ac {
+  text-align: center;
+  padding-bottom: 16px;
+  transition: all 500ms ease-in-out;
+}
+
+.ac:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ac .img-cover {
+  overflow: hidden;
+}
+
+.ac img {
+  transition: all 500ms ease-in-out;
+}
+
+.ac:hover img {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 567px) {
+  .h {
+    font-size: 32px;
+  }
+}
+
+.ab {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 4vw);
+  gap: 2rem;
+}
+
+.ab .item {
+  overflow: hidden;
+}
+
+.ab img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 500ms ease-out;
+}
+
+.ab .item-1 img {
+  object-fit: fill;
+}
+
+.ab img:hover {
+  transform: scale(1.2);
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+
+.item-2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.item-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.item-4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallary {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(20, 4vw);
+  }
+
+  .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+
+  .item-2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 11;
+  }
+  .item-3 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 15;
+  }
+  .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 15;
+    grid-row-end: 19;
+  }
+}
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">TRY OUT THESE LATEST PRODUCTS</h1>
+  <section class="section benefits">
+    <div class="benefit-center box">
+      <div class="benefit">
+        <span class="icon"><i class="bx bx-purchase-tag"></i></span>
+        <h4>Free Shipping</h4>
+        <span class="text">On the orders above Rs.9,999/-</span>
+      </div>
+
+     
+      <div class="benefit">
+        <span class="icon"><i class="bx bx-book-reader"></i></span>
+        <h4>10-Day Returns</h4>
+        <span class="text">Shop without any fear</span>
+      </div>
+
+      <div class="benefit">
+        <span class="icon"><i class="bx bx-headphone"></i></span>
+        <h4>24/7 Support</h4>
+        <span class="text">We are always there to help you</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="section">
+    <div class="h">
+      <h1><span>New</span> Arrivals</h1>
+    </div>
+    <div class="ac-center box">
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://www.91-img.com/gallery_images_uploads/1/4/146cd4c9a95c41b7e9112fd481d57967a876ec5f.jpg?w=0&h=901&q=80&c=1" alt="" />
+        </div>
+        <p>I PHONE 15 PRO MAX</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+        </div>
+        <div class="price">Rs.1,44,000/- only</div>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://images.macrumors.com/t/rcUyYzlczDB6JngU5qXPoWbb6Uo=/800x0/article-new/2023/02/iPhone-15-Pro-Roundup-Mock-Feature-Perspective.jpg?lossy" alt="" />
+        </div>
+        <p>I PHONE 15 PRO</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.74,999/- only</div>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://cdn.mos.cms.futurecdn.net/ssVpr5CgizAYdNfkLio5GP-1200-80.jpg.webp" alt="" />
+        </div>
+        <p>I PHONE 15</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.69,999/- only</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://www.apple.com/in/iphone-14/images/key-features/features/ios16/ios16_yellow__fl7jo2364wuy_large.jpg" alt="" />
+        </div>
+        <p>I PHONE 14</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.59,999/- only</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop By Category -->
+  <section class="section">
+    <div class="h">
+      <h1><span>Shop By</span> Categories</h1>
+    </div>
+    <div class="ab box">
+      <div class="item item-1">
+        <img src="https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/09/tempFileForShare_20220907-232127-scaled.jpg?ssl=1" alt="Mobiles" />
+      </div>
+      <div class="item item-2">
+        <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg" alt="Laptops" />
+      </div>
+      <div class="item item-3">
+        <img src="https://m.media-amazon.com/images/I/7120GgUKj3L._SX679_.jpg" alt="EARBUDS" />
+      </div>
+      <div class="item item-4">
+        <img src="https://www.apple.com/v/apple-watch-se/k/images/overview/hero/hero__w8w7dclctnmi_large.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Products -->
+  <section class="section">
+    <div class="h">
+      <h1>Popular <span>Products</span></h1>
+    </div>
+    <div class="ac-center box">
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://www.91-img.com/gallery_images_uploads/1/4/146cd4c9a95c41b7e9112fd481d57967a876ec5f.jpg?w=0&h=901&q=80&c=1" alt="" />
+        </div>
+        <p>I PHONE 15 PRO MAX</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.1,44,000/- only</div>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-gold?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841907" alt="" />
+        </div>
+        <p>I PHONE 14 PRO MAX</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.1,40,000/- only</div>
+      </div>
+
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MV7N2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1551489688005" alt="" />
+        </div>
+        <p>APPLE EARBUDS</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.44,000/- only</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://images.dailyobjects.com/marche/product-images/1809/surge-3-in-1-magnetic-charging-station-images/Surge-3-In-1-Magnetic-Charging-Station.png?tr=cm-pad_resize,v-2,w-768,h-760,dpr-1" alt="" />
+        </div>
+        <p>APPLE WIRELESS CHARGER</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.19,999/- only</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://rukminim1.flixcart.com/image/416/416/kfeamq80/smartwatch/f/v/r/ios-m06n3hn-a-apple-original-imafvvhrafegcfz2.jpeg?q=70" alt="" />
+        </div>
+        <p>APPLE 6 Watch</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.33,000/- only</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="data:image/jpeg;base64,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" alt="" />
+        </div>
+        <p>I PHONE 13 PRO MAX</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.49,999/- only</div>
+      </div>
+      <div class="ac">
+        <div class="img-cover">
+          <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662418131/Croma%20Assets/Communication/Mobiles/Images/230112_nbm4ag.png/mxw_2048,f_auto" alt="" />
+        </div>
+        <p>I PHONE 11 PRO</p>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <div class="price">RS.5600/- only</div>
+      </div>
+     
+    </div>
+  </section>
+</body>
+</html>
